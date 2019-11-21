@@ -35,9 +35,11 @@ function findGif() {
     .then(handleGif);
 }
 
-function handleGif(resp) {
-  console.log(resp.data[0].images.original.url);
-  answerBox.innerHTML = `<img src="${resp.data[0].images.original.url}">`;
+function handleGif(response) {
+  var gifUrl = getGifUrlFromResponse(response);
+  answerBox.innerHTML = `
+    <img src="${gifUrl}">
+  `;
   answerBox.style.display = 'block';
 }
 
@@ -48,6 +50,10 @@ function handleGif(resp) {
 // helper function to get a giphy url
 function getGiphyUrl(searchTerm) {
   return 'https://api.giphy.com/v1/gifs/search?api_key=w8BRwWuLdamTXtr2kydfXsfitj2WuwCm&limit=1&offset=0&rating=G&lang=en&q=' + searchTerm;
+}
+
+function getGifUrlFromResponse(resp) {
+  return resp.data[0].images.original.url;
 }
 
 // helper function to get a number
