@@ -6,7 +6,7 @@ var questionBox = document.querySelector('.questionBox');
 var answerBox = document.querySelector('.answerBox');
 
 // assign a function handler to the click event
-mybutton.addEventListener('click', findGif);
+mybutton.addEventListener('click', doMathProblem);
 
 // this function will change the button color to a random color
 function changeButtonColor() {
