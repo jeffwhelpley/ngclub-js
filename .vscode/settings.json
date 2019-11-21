@@ -1,0 +1,7 @@
+{
+  "editor.theme": "vs-light",
+  "editor.wordWrap": "off",
+  "editor.formatOnType": true,
+  "editor.fontSize": 12,
+  "editor.lineHeight": 16
+}
