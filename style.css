@@ -7,30 +7,18 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header {
-  font-size: 30px;
-  color: green;
-}
-
-.mainimg {
-  width: 200px;
-  margin: 20px auto;
-  border: 1px solid black;
-}
-
-.section {
-  width: 200px;
-}
-
-.mylist {
-  font-size: 12px;
-  line-height: 1.75em;
-}
-
 .mybutton {
   padding: 10px;
   font-size: 20px;
   background-color: green;
   color: white;
   margin: 20px;
+}
+
+.answerBox {
+  margin: 30px;
+  padding: 20px;
+  font-size: 40px;
+  border: 1px solid grey;
+  display: none;
 }
