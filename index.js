@@ -32,10 +32,10 @@ function findGif() {
 
   fetch(giphyUrl)
     .then(resp => resp.json())
-    .then(handleGif);
+    .then(displayGif);
 }
 
-function handleGif(response) {
+function displayGif(response) {
   var gifUrl = getGifUrlFromResponse(response);
   answerBox.innerHTML = `
     <img src="${gifUrl}">
